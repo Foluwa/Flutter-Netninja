@@ -1,7 +1,13 @@
 import 'package:flutter/material.dart';
 
 void main() => runApp(MaterialApp(
-      home: Scaffold(
+      home: Home()
+));
+
+class Home extends StatelessWidget {
+  @override
+  Widget build(BuildContext context) {
+    return  Scaffold(
         appBar: AppBar(
           title: Text('My Ninja App'),
           centerTitle: true,
@@ -21,8 +27,10 @@ void main() => runApp(MaterialApp(
         ),
         floatingActionButton: FloatingActionButton(
           onPressed: () {},
-          child: Text('Click'),
+          child: Text('Click Me'),
           backgroundColor: Colors.green[600],
         ),
-      ),
-    ));
+      );
+  }
+}
+
